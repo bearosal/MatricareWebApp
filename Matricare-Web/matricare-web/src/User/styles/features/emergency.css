@@ -1,0 +1,294 @@
+/* Emergency component styles */
+
+.emergency-container {
+    display: flex;
+    height: 100vh;
+    background: #ffffff !important;
+    color: #040404;
+    text-align: center;
+}
+
+.emergency-nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-back-button,
+.emergency-settings-button {
+    background: none;
+    border: none;
+    color: #042440;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.emergency-back-button:hover,
+.emergency-settings-button:hover {
+    color: #ffffff;
+    background-color: #7c459c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.emergency-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 60px);
+    padding: 20px;
+}
+
+.emergency-sos-button-container {
+    margin-bottom: 20px;
+}
+
+.emergency-sos-button {
+    background-color: #ff2e2e;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 48px;
+    padding: 120px 100px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.emergency-sos-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.2), 0 0 15px rgba(255, 0, 0, 0.20), 0 0 25px rgba(255, 0, 0, 0.25);
+}
+
+.emergency-sos-description {
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+/* Popup styles */
+
+.emergency-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.emergency-popup-list-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emergency-popup-list-container h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #042440;
+    margin-top: 20px;
+}
+
+.emergency-add-contact-button {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Ensure height matches width */
+    border: none;
+    background-color: #7c459c; /* Background color */
+    border-radius: 50%; /* Makes it a circle */
+    color: #ffffff;
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center;
+    line-height: 50px; /* Center the text vertically */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    transition: background-color 0.3s ease;
+}
+
+.emergency-close-button {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+.emergency-close-button:hover{
+    width: 30px; /* Ensure width and height are equal for circular appearance */
+    height: 30px;
+    border: none;
+    border-radius: 50%; /* Makes it circular */
+    color: #ffffff;
+    font-size: 20px; /* Adjust as needed */
+    text-align: center;
+    line-height: 40px; /* Centers the text vertically */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c459c; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.emergency-contact-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.emergency-consul-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Divider color */
+    margin-top: 20px; /* Adjust spacing */
+    margin-left: 0px;
+  }
+
+/* Contact List Item Styles */
+
+.emergency-contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-contact-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.emergency-contact-details {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.emergency-contact-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add some space below the name */
+}
+
+.emergency-contact-phone {
+    color: #555;
+}
+
+/* Add Contact Popup Styles */
+
+.emergency-popup-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.emergency-popup-content h2 {
+    margin-top: 0;
+    color: #042440;
+    margin-bottom: 10px;
+}
+
+.emergency-close-button1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+.emergency-close-button1:hover {
+    background-color: #7c459c;
+    color: white;
+    border-radius: 50%;
+}
+
+.emergency-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+.emergency-form-group input {
+    padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: transparent !important;
+  color: #042440 ;
+  width: 90%;
+  transition: border-color 0.3s;
+  margin-left: 10px;
+}
+
+.emergency-save-button {
+    background-color: #e39fa9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+
+.emergency-save-button:hover {
+    background-color: #7c459c;
+    color: white;
+}

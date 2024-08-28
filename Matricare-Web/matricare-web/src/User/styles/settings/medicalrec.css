@@ -1,0 +1,785 @@
+.medical-record-container {
+  width: 100%;
+  height: 920px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  background-color: #7c459ccd !important; /* Adjust the color and opacity as needed */
+  z-index: -1;
+}
+.medical-record-main-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: -60px;
+  margin-left: -30px
+}
+
+.medical-record-nav {
+  width: 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: auto;
+}
+
+.back-button-medical {
+  position: absolute;
+  bottom: -50px;
+  top: 50px; /* Adjust as needed */
+  left: 90px; /* Adjust as needed */
+  color: #ffffff; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+}
+
+.back-button-medical:hover{
+  color:#7c459c;
+}
+
+.back-button-medical1 {
+  position: absolute;
+  bottom: -50px;
+  top: 50px; /* Adjust as needed */
+  left: -200px; /* Adjust as needed */
+  color: #ffffff; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+}
+
+
+.medical-record-content {
+  width: 100%;
+  height: 800px;
+}
+
+.medical-record-header-container {
+  position: relative; /* Ensure the container is positioned */
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  padding: 60px 120px;
+  height: 300px;
+}
+
+.background-image-medical {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.medical-record-password-container{
+  margin: 250px auto;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  width: 30%;
+  height: 20vh;
+  margin-top: 300px;
+  z-index: 1; 
+  margin-left: 720px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.medical-record-password-container h3 {
+  margin-top: -100px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: -70px;
+}
+
+.medical-record-password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.medical-record-password-form input {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  width: 250px;
+}
+
+.password-title {
+  position: relative;
+  padding-left: 200px; /* Adjust as needed */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: -100px;
+}
+
+.lock-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.lock-icon svg {
+  width: 40px; /* Adjust the width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  color: #ffffff;
+}
+
+.lock-icon p {
+  margin-top: 5px; /* Adjust spacing as needed */
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Adjust the position of the line */
+.password-title::before {
+  content: "";
+  position: absolute;
+  left: 280px;
+  top: 50px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 250px;
+  background-color: #ffffff;
+}
+
+
+
+
+.medical-record-button {
+  padding: 10px 20px;
+  background-color: #E39FA9;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.medical-record-button:hover {
+  background-color: #7c459c;
+}
+
+.medical-record-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.medical-record-title {
+  color: #7c459c;
+  font-size: 25px;
+  margin-bottom: -80px;
+  margin-left: -1550px;
+  margin-top: 12  0px;
+}
+
+.medical-record-title2 {
+  color: #7c459c;
+  font-size: 80px;
+  margin-bottom: 60px;
+  margin-left: -1290px;
+}
+
+.medical-search-bar {
+  position: relative;
+  display: inline-block;
+  margin-left: -1400px;
+  margin-top: -100px;
+}
+
+.medical-search-bar input[type="text"] {
+  padding: 10px 30px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s, width 0.3s;
+  background-color: #E39FA9;
+}
+
+.search-icon-medical {
+  position: absolute;
+  top: 49%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.medical-search-bar input[type="text"]::placeholder {
+  color: white;
+}
+
+
+.medical-button-container {
+  position: absolute;
+  top: 380px; /* Adjust as needed to position the buttons above other elements */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.medical-button-box {
+  margin: 10px; /* Adjust as needed */
+}
+
+.medical-button-record {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px; /* Adjust padding to fit within the header container */
+  background-color: #ffffff;
+  color: #042440;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.medical-button-record:hover {
+  background-color: #E39FA9;
+  color: white;
+}
+
+.medical-button-icon {
+  margin-right: 10px;
+  font-size: 20px; 
+  color: #9a6cb4;
+}
+
+.medical-button-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #042440;
+}
+
+/* table */
+
+.medical-table-container {
+  margin-top: 100px; /* Adjust as needed */
+  width: 90%;
+  margin-left: 5%;
+}
+
+.medical-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.medical-table th, .medical-table td {
+  border: 1px solid #ddd;
+  padding: 9px;
+  text-align: center;
+}
+
+.medical-table th {
+  background-color: #9a6cb4;
+  color: white;
+  text-align: center;
+}
+
+.medical-view-button {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none !important;
+  font-size: 16px;
+}
+
+.medical-view-button:hover{
+  background-color: #7c459c;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.add-note-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: none !important;
+  font-size: 16px;
+}
+
+.add-note-button:hover{
+  background-color: #7c459c;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.date-column {
+  width: 10%; /* Customize the width of the Date column */
+}
+
+.assessment-column {
+  width: 10%; /* Customize the width of the Assessment column */
+}
+
+.notes-column {
+  width: 10%; /* Customize the width of the Notes column */
+}
+
+.lab-test-column {
+  width: 30%; /* Customize the width of the Laboratory Test column */
+}
+
+.date-issued-column {
+  width: 20%; /* Customize the width of the Date Issued column */
+}
+
+.diagnosis-column {
+  width: 25%; /* Customize the width of the Diagnosis column */
+}
+
+.result-column {
+  width: 25%; /* Customize the width of the Result column */
+}
+
+/* assessment modal */
+
+.assessment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.assessment-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 670px;
+}
+
+.assessment-modal-body {
+  margin-top: 20px;
+}
+
+.assessment-image{
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.assessment-close-button {
+  padding: 10px 50px;
+  background-color: #E39FA9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 180px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.assessment-close-button:hover {
+  background-color: #7c459c;
+}
+
+/* result modal */
+
+
+.result-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.result-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 670px;
+}
+
+.result-modal-body {
+  margin-top: 20px;
+}
+
+.result-image{
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.result-close-button {
+  padding: 10px 50px;
+  background-color: #E39FA9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 180px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.result-close-button:hover {
+  background-color: #7c459c;
+}
+
+
+/* add note modal */
+
+
+.add-note-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.add-note-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 670px;
+}
+
+.add-note-modal-header h2{
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.add-note-modal-body {
+  margin-top: 40px;
+}
+
+.add-note-textarea{
+  max-width: 80%;
+  height: 400px;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.add-note-close-button,
+.add-note-save-button {
+  padding: 10px 50px;
+  background-color: #E39FA9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.add-note-close-button:hover,
+.add-note-save-button:hover {
+  background-color: #7c459c;
+}
+
+.add-note-close-button {
+  margin-right: 20px; /* Adjust margin to separate the buttons */
+}
+
+.add-note-save-button {
+  margin-left: 20px; /* Adjust margin to separate the buttons */
+}
+
+/* Styles for the note container */
+.note-container {
+  margin-bottom: 0px;
+}
+
+/* Styles for the note text */
+.note-text {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+.edit-note-button {
+  padding: 12px 40px;
+  background-color: #E39FA9;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+/* Styles for the edit mode textarea */
+.edit-note-textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.save-note-button, .cancel-edit-button {
+  margin-right: 10px;
+}
+
+/* add labs form */
+
+/* Add Button */
+.add-record-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #E39FA9; /* Change color as needed */
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 420px;
+  right: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-record-button:hover {
+  background-color: #7c459c; /* Change hover color as needed */
+}
+
+.add-icon {
+  font-size: 24px;
+}
+
+/* Add Record Form */
+
+.add-record-form h2 {
+  font-size: 24px;
+  color: #042440;
+  margin-bottom: 50px; /* Adjust spacing between title and form */
+  margin-top: -100px;
+}
+
+.add-record-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 80px 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(67, 25, 92, 0.8);
+  z-index: 1000;
+}
+
+.add-record-form button {
+  background-color: #E39FA9; /* Change color as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.add-record-form button:hover {
+  background-color: #7c459c; /* Change hover color as needed */
+}
+
+
+.MR-form-group {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.MR-form-input {
+  padding: 10px;
+  border: none !important;
+  border-bottom: 2px solid #ddd !important;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: transparent !important;
+  color: #042440;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.MR-form-label {
+  position: absolute;
+  top: 20px; /* Initial position to start above the input */
+  left: 20px;
+  color: #042440;
+  font-size: 16px; /* Start with a smaller font size */
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  pointer-events: none;
+}
+
+.MR-form-label.filled {
+  top: -20px; /* Move label up when input is focused or has content */
+  font-size: 12px; /* Shrink font size when label moves up */
+  color: #042440; /* Change label color when active */
+}
+
+.MR-form-input:focus ~ .MR-form-label,
+.MR-form-input:not(:placeholder-shown) ~ .MR-form-label {
+  top: -20px; /* Move label up when input is focused or has content */
+  font-size: 12px; /* Shrink font size when label moves up */
+  color: #042440; /* Change label color when active */
+}
+
+.MR-close-button {
+  background: none !important;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #042440 !important;
+  font-size: 28px !important;
+  margin-left: 380px !important;
+  margin-top: -140px !important;
+  margin-bottom: 50px;
+}
+
+
+.MR-close-button:hover {
+  color: #7c459c !important;
+}
+
+
+/* Customize the container */
+.react-datepicker {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* Customize the header */
+.react-datepicker__header {
+  color: white; /* White text color */
+  border-bottom: 1px solid #ccc;
+}
+
+.react-datepicker__current-month {
+  color: #042440 !important; /* White text color */
+  margin-top: 20px !important;
+}
+
+/* Customize the day names */
+.react-datepicker__day-names {
+  background-color: #f1f1f1; /* Light gray background for day names */
+  color: #333; /* Dark text color */
+  margin-top: 10px;
+}
+
+/* Customize day cells */
+.react-datepicker__day {
+  color: #333; /* Text color for day cells */
+  font-size: 1rem;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.react-datepicker__day:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Customize selected day cell */
+.react-datepicker__day--selected {
+  background-color: #007bff; /* Background color for selected date */
+  color: white; /* Text color for selected date */
+}
+
+/* Customize today’s date cell */
+.react-datepicker__day--today {
+  font-weight: bold; /* Bold text for today’s date */
+}
+
+/* Customize the month/year select dropdown */
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+  border: 1px solid #007bff; /* Border color for navigation arrows */
+  gap: 100px !important;
+  margin-left: 1px !important;
+  margin-top: 20px !important;
+}
+
+.react-datepicker__navigation--previous::before,
+.react-datepicker__navigation--next::before {
+  border-color: #007bff; /* Arrow color */
+}
+
+

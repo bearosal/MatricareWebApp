@@ -1,0 +1,235 @@
+/* appointmentconsultant.css */
+
+.appointment-consultant-container {
+  width: 100%;
+  height: 920px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.appointment-consultant-main-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: -60px;
+  margin-left: -30px;
+}
+
+.appointment-consultant-nav {
+  width: 100px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: auto;
+}
+
+.back-button-consultant {
+  position: absolute;
+  bottom: -50px;
+  top: 50px; /* Adjust as needed */
+  left: -200px; /* Adjust as needed */
+  color: #fff; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+}
+
+.logo-image-consultant {
+  width: 50px; 
+  height: auto;
+  margin: 10px; 
+  margin-left: 40px;
+}
+
+.appointment-consultant-content {
+  width: 100%;
+}
+
+.appointment-consultant-header-container {
+  position: relative; /* Ensure the container is positioned */
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  padding: 60px 120px;
+}
+
+.medical-title {
+  color: #603830;
+  font-size: 25px;
+  margin-bottom: -10px;
+  margin-left: -1550px;
+}
+
+.consultant-title {
+  color: #603830;
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-left: -1150px;
+}
+
+.search-bar {
+  position: relative;
+  display: inline-block;
+  margin-left: -1400px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 30px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s, width 0.3s;
+  background-color: #E39FA9;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #ffffff;
+}
+
+.search-icon-consultant {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  margin-left: -10px;
+}
+
+.appointment-consultant-table-container {
+  width: 90%;
+  margin-left: 100px;
+}
+
+.appointment-consultant-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  border-left: 5px solid #E39FA9;
+}
+
+.appointment-consultant-table th,
+.appointment-consultant-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.appointment-consultant-table th {
+  background-color: #E39FA9;
+  color: #333;
+  font-weight: bold;
+}
+
+.appointment-consultant-table tr:hover {
+  background-color: #e39fa956;
+}
+
+.appointment-consultant-table tr {
+  border-bottom: 20px solid #ffffff;
+}
+
+.appointment-consultant-table td {
+  color: #555;
+}
+
+.appointment-consultant-edit-button,
+.appointment-consultant-delete-button {
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: -5px;
+}
+
+.appointment-consultant-edit-button {
+  background-color: #E39FA9;
+}
+
+.appointment-consultant-edit-button:hover {
+  background-color: #603830;
+}
+
+.appointment-consultant-delete-button {
+  background-color: #e74c3c;
+}
+
+.appointment-consultant-delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Modal styles */
+.appointment-consultant-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.appointment-consultant-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.appointment-consultant-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.appointment-consultant-modal-header h2 {
+  margin: 0;
+}
+
+.appointment-consultant-modal-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.appointment-consultant-modal-close:hover {
+  color: #f44336;
+}
+
+.appointment-consultant-modal-body {
+  padding-top: 10px;
+}
+
+.appointment-consultant-close-button {
+  background-color: #E39FA9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.appointment-consultant-close-button:hover {
+  background-color: #603830;
+}

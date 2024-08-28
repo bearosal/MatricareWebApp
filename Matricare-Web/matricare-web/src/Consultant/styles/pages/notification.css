@@ -1,0 +1,101 @@
+.PatientDashboard {
+  padding: 20px;
+}
+
+.NotificationsSection {
+  max-width: auto;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffffe5 !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  color: #966b6b;
+  margin-top: 20px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #00000032;
+  margin: 0 30px 20px 30px;
+}
+
+.no-notifications {
+  text-align: center;
+  color: #c98f8f;
+  font-size: 1.2rem;
+  margin-top: 150px;
+}
+
+.no-notifications h1 {
+  text-align: center;
+  color: #c98f8f;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.no-notifications p {
+  text-align: center;
+  color: #c98f8f;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.caught-up-icon {
+  margin-top: 20px;
+  font-size: 7rem;
+  color: #c98f8f;
+  margin-bottom: 20px;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-container {
+  padding: 15px;
+  background: #ffffff;
+  border-left: 5px solid #c98f8f;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-text {
+  flex-grow: 1;
+}
+
+.notification-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.notification-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.notification-time {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.notification-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}

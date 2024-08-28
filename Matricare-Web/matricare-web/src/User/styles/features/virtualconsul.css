@@ -1,0 +1,638 @@
+.virtual-consul {
+  display: flex;
+  height: 100vh;
+}
+
+.virtual-consul-left {
+  width: 5%;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure correct positioning */
+  z-index: 1;
+}
+
+.back-button-virtualconsul{
+  position: absolute;
+  bottom: -50px;
+  top: 20px; /* Adjust as needed */
+  left: 25px; /* Adjust as needed */
+  color: #7c459c; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.back-button-virtualconsul:hover {
+  color: #e39fa9;
+}
+
+.call-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: -80px; /* Adjust margin as needed */
+  z-index: 1;
+  margin-right: 20px;
+
+}
+
+
+.call-button {
+  background-color: #7c459c;
+  color: white; /* Icon color */
+  border: none;
+  padding: 10px 14px;
+  font-size: 26px;
+  cursor: pointer;
+  margin-top: 790px;
+  margin-left: 5px;
+  border-radius: 25px;
+}
+
+.call-button:hover {
+  color: #042440; /* Darker shade for hover effect */
+  background-color: #7c459c;
+}
+
+/* Styles for the main container */
+.call-popup {
+  position: absolute;
+  top: 250px; /* Adjust top position as needed */
+  right: 650px; /* Adjust right position as needed */
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 5px 1000px #7c459c4a;
+  padding: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* Styles for the header section */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the close button */
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #042440;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.close-button:hover {
+  color: #7c459c;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Styles for the contact list */
+.contact-list {
+  margin-top: -30px;
+  margin-left: -40px;
+  margin-right: -70px;
+  background-color: transparent;
+}
+
+/* Styles for each contact item */
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: -100px;
+  background-color: transparent !important;
+  margin-left: -10px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  width: 250px;;
+}
+
+/* Styles for contact icon */
+.contact-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #e39fa9;
+}
+
+/* Styles for the call icon button */
+.call-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #7c459c;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.call-icon-button:hover {
+  background-color: #e39fa9;
+  border-radius: 50%;
+}
+
+/* Styles for the Add Contact button */
+.add-contact-button {
+  background-color: #7c459c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 10px;
+  left: -280px;
+  color: white;
+}
+
+.add-contact-button:hover {
+  background-color: #e39fa9;
+  color: white;
+}
+
+
+.add-contact-container {
+  margin-top: 10px;
+}
+
+
+.add-contact-form {
+  position: absolute;
+  top: 0px; /* Adjust top position as needed */
+  left: -50px; /* Adjust right position as needed */
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 5px 1000px #7c459c4a;
+  padding: 70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  color: #042440;
+}
+
+.add-contact-form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: transparent !important;
+  color: #042440 ;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.add-contact-icon{
+  font-size: 80px;
+  margin-left: 180px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the button in the form */
+.add-contact-form button {
+  background-color: #e39fa9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+/* Hover state for button in the form */
+.add-contact-form button:hover {
+  background-color: #7c459c;
+  color: white;
+}
+
+.virtual-consul-top {
+  position: absolute;
+  top: 10px;
+  left: 52.5%;
+  transform: translateX(-50%);
+  background-color: #e39fa9;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 92.5%;
+}
+
+.in-meeting-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.in-meeting-icon {
+  font-size: 30px; /* Adjust size as needed */
+  margin-right: 10px;
+  color: #042440; /* Adjust color as needed */
+  margin-top: 5px;
+}
+
+.in-meeting-label {
+  color: #042440;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.join-meeting-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1120px;
+}
+
+.join-meeting-label {
+  margin-right: 10px;
+  color: #042440;
+  font-size: 16px;
+}
+
+.meeting-code-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px !important;
+  height: 5px !important;
+  background-color: #ffffff!important;
+  font-size: 12px;
+}
+
+.join-meeting-button {
+  background-color: #7c459c;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 9px 11px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.join-meeting-button:hover {
+  background-color: #ffffff;
+  color: #042440;
+}
+
+.virtual-consul-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.camera-container {
+  position: relative;
+  width: 97%;
+  height: 90%;
+  background-color: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 70px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  justify-content: space-between; /* Align items in a row with space between */
+  align-items: flex-end; /* Align items to the bottom of the container */
+  box-sizing: border-box;
+}
+
+.doctor-camera {
+  width: 100%; /* Match the width of the camera-container */
+  height: 85%; /* Maintain aspect ratio */
+  display: block;
+  object-fit: cover; /* Ensures the video fills the container */
+  border-radius: 0 0 100px 100px;
+  position: absolute; /* Positioning relative to the camera-container */
+  top: 0; 
+}
+
+.user-camera {
+  position: absolute;
+  bottom: 40px; /* Adjust as needed */
+  right: 40px; /* Adjust as needed */
+  width: calc(25% - 40px); /* Adjust the percentage and subtract padding */
+  height: calc(25% - 40px); /* Adjust the percentage and subtract padding */
+  border: 2px solid white;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the video fills the container */
+}
+
+.call-controls {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+ 
+}
+
+.call-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px; /* Adjust padding as needed */
+  margin: 0; /* Ensure no margin */
+  color: #042440;
+}
+
+
+.call-controls button .VR-icon {
+  font-size:30px;
+}
+
+.call-controls button .VR-label {
+  display: none; /* Hide label by default */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.call-controls button:hover .VR-label {
+  display: block; /* Show label on hover */
+
+}
+
+.call-controls button:hover .VR-icon {
+  color: #9a6cb4;
+}
+
+.call-end {
+   position: absolute;
+  bottom: 60px; /* Adjust as needed */
+  left: 40%; /* Center horizontally */
+  transform: translateX(-50%); 
+  background-color: rgb(216, 62, 62);
+  color: white;
+  font-size: 30px;
+  padding: 30px 35px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 2;
+  
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 140px; /* Adjust size of the circle */
+    height: 140px; /* Adjust size of the circle */
+    background-color: rgba(255, 255, 255, 0.2); /* Background color of the circle */
+    border-radius: 50%; /* Make it circular */
+    bottom: -20px; /* Adjust vertical positioning */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+.call-end:hover{
+  background-color: white;
+  color:  rgb(216, 62, 62); 
+}
+
+
+.call-timer {
+  position: absolute;
+  bottom: 50px;
+  right: 360px;
+  color: #042440;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+
+/* Ensure styles are correctly targeting elements */
+
+.virtual-consul-right {
+  width: 25%;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 90%;
+  margin-top: 80px;
+  border-radius: 10px;
+  margin-right: 15px;
+  position: relative; /* Ensure relative positioning for z-index */
+  z-index: 1; /* Adjust z-index to ensure it's above other content */
+}
+
+.consultation-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center align buttons */
+  gap: 10px; /* Adjust the gap between buttons */
+  position: relative; /* Ensure relative positioning for z-index */
+  z-index: 2; /* Higher z-index to ensure it's above .virtual-consul-left */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.consultation-option {
+  background-color: transparent; /* Example background color */
+  color: #042440; /* Example text color */
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Example border radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Ensure text is centered */
+}
+
+.consultation-option .VR-label {
+  font-size: 18px;
+}
+
+.consultation-option:hover {
+  background-color: transparent;
+}
+
+.consultation-option:hover .VR-label {
+  display: block; /* Show label on hover */
+  color: #7c459c;
+}
+
+.virtual-consul-divider{
+  width: 90%;
+  height: 1px;
+  background-color: #ccc; /* Divider color */
+  margin-top: 10px; /* Adjust spacing */
+  margin-left: 20px;
+}
+
+.container-calls,
+.container-chats {
+  background-color: transparent !important;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  margin-top: 10px; /* Adjust spacing */
+  margin: 20px;
+  
+}
+
+.call-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: -40px;
+  margin-left: -60px;
+}
+
+.profile-image {
+  width: 30px !important; /* Adjust width as needed */
+  height:30px !important; /* Adjust height as needed */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflowing parts */
+  margin-right: 30px;
+
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.call-details {
+  flex-grow: 1; /* Take remaining space */
+  margin-top: 50px;
+}
+
+.caller-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #042440;
+}
+
+.call-end-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.call-end-label .VR-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #888;
+}
+
+.call-duration {
+  color: #888;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.call-date {
+  position: absolute;
+  top: 355px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Adjust background color */
+  padding: 0 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size */
+  z-index: 1; /* Ensure date is above the divider */
+  margin-bottom: 60px;
+}
+
+.call-date-divider {
+  width: calc(100% - 20px); /* Adjust width minus padding */
+  height: 2px;
+  background-color: #ccc; /* Divider color */
+  margin: 10px auto; /* Adjust margin for spacing */
+  position: relative; /* Ensure relative positioning for content alignment */
+  z-index: 0; /* Ensure dividers are behind dates */
+  top: 20px;
+  margin-bottom: 60px;
+}
+
+/* virtualconsul.css */
+
+.VR-chat-messages {
+  padding-right: 20px; /* Adjust padding-right as needed */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* For positioning the time */
+  border: none !important;
+}
+
+.VR-chat-message-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  width: 100%; /* Make the wrapper take full width */
+}
+
+.VR-chat-message {
+  display: inline-block;
+  max-width: 80%; /* Adjust max-width as needed */
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  background-color: #f0f0f0;
+  align-self: flex-start; /* Align to the left by default */
+  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+}
+
+.VR-chat-message.user {
+  align-self: flex-end; /* Align user messages to the right */
+  background-color: #9a6cb4;
+  color: white;
+  margin-bottom: 5px; /* Adjust the margin bottom for user messages */
+}
+
+.VR-message-time {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.VR-chat-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  margin-left: 15px;
+}
+
+.VR-sent-message {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: none !important;
+  font-size: 14px;
+  background-color: transparent !important;
+  border-radius: 8px;
+}
+
+
+.VR-divider{
+  width: 440px;
+  height: 1px;
+  background-color: #ccc; /* Divider color */
+  margin-top: 650px; /* Adjust spacing */
+  margin-left: -30px;
+}

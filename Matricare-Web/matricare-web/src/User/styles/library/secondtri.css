@@ -1,0 +1,159 @@
+.title {
+    text-align: center;
+    font-size: 5rem;
+    font-style: oblique;
+    padding-top: 70px; /* Use padding instead of margin */
+    margin-bottom: 50px;
+    margin-left: 620px;
+    color: #6a3e37;
+}
+
+.image-container {
+    height: 750px;
+    width:  100%;
+}
+
+.secondtri-image {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.second-trimester-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.section {
+    margin-bottom: 40px;
+    margin-top: 40px; /* Adjust this value as needed */
+}
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+h2 + hr {
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-top: 80px;
+    color: #E39FA9;
+}
+
+.section p {
+    font-size: 16px;
+    color: #6a3e37;
+}
+
+.section ul {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 20px; /* Add left padding */
+    line-height: 1.5; /* Adjust line height */
+}
+
+.section ul li {
+    margin-bottom: 10px; /* Reduce margin bottom to control spacing between list items */
+}
+
+.section ul.checklist li {
+    font-size: 16px;
+    margin-bottom: 5px; /* Adjust the margin bottom as needed */
+    position: relative;
+}
+
+
+.section ul.checklist li::before {
+    content: "\2713";
+    color: #E39FA9;
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.tagline-container {
+    display: flex;
+    align-items: center;
+}
+
+.tagline-container h2 {
+    border-left: 3px solid rgba(0, 0, 0, 0.764);
+    padding-left: 10px;
+    margin-bottom: 30px;
+    padding-top: 20px; /* Adjusted for vertical alignment */
+    padding-bottom: 20px; /* Adjusted for vertical alignment */
+}
+
+.section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Allow the image to adjust its width relative to its parent container */
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 20px; /* Adjusted spacing below the image */
+}
+
+.related-articles {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.related-articles h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.article-box {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.article-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.article-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.article-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.article-box a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: blueviolet;
+    font-style: italic;
+}
+
+.article-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

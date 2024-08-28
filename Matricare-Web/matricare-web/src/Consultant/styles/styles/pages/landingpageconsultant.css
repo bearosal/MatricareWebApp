@@ -1,0 +1,606 @@
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FCFAF2;
+  padding: 20px;
+}
+
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  top: 10px; /* Adjust the top position as needed */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-right .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  font-size: 20px;
+  color: #E39FA9;
+}
+
+.header-right .nav-links li {
+  display: inline;
+  margin-right: 100px;
+  color: #E39FA9;
+}
+
+.header-left .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
+  font-size: 20px;
+  color: #E39FA9;
+}
+
+.header-right .nav-links li a {
+  text-decoration: none;
+  color: #E39FA9;
+  font-weight: bold;
+}
+
+
+.bt-contact{
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #c98f8f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sign-up-button {
+  padding: 10px 40px;
+  background-color: #E39FA9;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sign-up-button:hover {
+  color: #161111;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Make the logo circular */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 100;
+  text-align: left; /* Align links to the left */
+  margin-left: 100px;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 100px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #E39FA9;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #603830;
+}
+/* What we do Section */
+
+.flower-icon1 {
+  color: #603830; /* Adjust the color as needed */
+  font-size: 24px; /* Adjust the size as needed */
+  height: 100px;
+  width: 100px;
+  margin-left: 880px;
+  margin-top: -20px;
+}
+
+.what-we-do {
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden; /* Ensure content inside this section stays within boundaries */
+  background-color: #ffffff ;
+  background-size: cover; /* Adjust as needed */
+  margin-top: 10px;
+  
+}
+
+.what-we-do:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height of the line */
+  background-color: #5e2727; /* Color of the line */
+}
+
+.what-we-do:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FEB4A0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure the blur overlay is behind other content */
+}
+
+
+
+.what-we-do .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.what-we-do .service h3 {
+  margin-bottom: 10px;
+  color:#67433b;
+}
+.what-we-do .service p {
+  margin-top: 10px; /* Adjust the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #67433b;
+}
+
+.what-we-do .service2 h3 {
+  margin-bottom: 10px;
+  color:#67433b;
+}
+.what-we-do .service2 p {
+  margin-top: 10px; /* Adjust the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #67433b;
+}
+
+.what-we-do h2{
+  color: #E39FA9;
+  margin-top: -10px;
+  margin-left:700px;
+  font-size: 5rem;
+  font-style: oblique;
+  margin-bottom: 50PX;
+}
+
+.what-we-do .services-container {
+  display: flex;
+  flex-direction: column; /* Arrange services in a column */
+  margin-left: 10px;
+}
+
+.what-we-do .row {
+  display: flex;
+  justify-content: center; /* Center services horizontally */
+}
+
+.what-we-do .service {
+  position: relative; /* Ensure the .hover-image is positioned relative to the .service */
+  margin: 10px;
+  border: 1px solid #f5e7e6;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center all content horizontally and vertically */
+  overflow: hidden; /* Hide overflow content */
+  margin-top: -10px;
+  background-color: #f5e7e6;
+}
+
+.what-we-do .service2 {
+  position: relative; /* Ensure the .hover-image is positioned relative to the .service */
+  margin: 10px;
+  border: 1px solid #f5e7e6;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center all content horizontally and vertically */
+  overflow: hidden; /* Hide overflow content */
+  margin-top: 50px;
+  background-color: #c98f8faf;
+}
+
+.what-we-do .service2 img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+
+.what-we-do .service2:hover .hover-image {
+  display: flex; /* Show the hover image when hovering over the service */
+}
+
+.what-we-do .service img {
+  width: 50px;
+  color: #603830;
+}
+
+
+.what-we-do .service:hover .hover-image {
+  display: flex; /* Show the hover image when hovering over the service */
+}
+
+.what-we-do .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none; /* Initially hide the hover image */
+  justify-content: center;
+  align-items: center;
+}
+
+.what-we-do .hover-image img {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  
+}
+
+.video-container {
+  border-radius: 50px; /* Add border radius to the container */
+  overflow: hidden; /* Ensure the border radius applies correctly */
+
+}
+
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, -20%);
+  margin-bottom: auto;
+}
+
+.hero-content-left {
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust left margin */
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: left; /* Align text to left */
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #db9595;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.download-button {
+  padding: 20px 50px;
+  background-color: #E39FA9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* Add some spacing */
+  border-radius: 25px; /* Make it round */
+  margin-left: 10%;
+  font-size: 1rem;
+}
+
+
+.download-button:hover {
+  background-color: #67433b;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 9rem;
+  font-style: italic;
+  color: #ffffff;
+  border: #000000;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: #000000;
+}
+
+/* about us section styles */
+.about-us {
+  padding: 80px 0; /* Adjust the padding as needed */
+  background-color: #f5e7e6;
+  margin-top: -300px;
+  z-index: 1;
+  height: 700px;
+  
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height of the line */
+  background-color: #f5e7e6; /* Color of the line */
+  margin-top: 840px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the content */
+  height: 800px;
+}
+
+.about-text {
+  margin-top: 250px;
+  flex: 1;
+  padding: 0 20px; /* Add padding to the text content */
+  color: #6a3e37; /* Text color */
+}
+
+.about-text hr {
+  border: 0;
+  height: 5px;
+  background-color: #0000005b; /* Adjust color as needed */
+  margin-bottom: -30px; /* Adjust margin-bottom to control spacing */
+  width: 200px;
+  border-radius: 20px;
+  margin-top: -110px;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #E39FA9;
+  font-style: italic;
+}
+
+.about-text h2 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 20px; /* Add some space between paragraphs */
+  text-align: center;
+  padding: 5px;
+  width: 800px;
+  margin-left:180px;
+}
+
+.download-button1 {
+  padding: 20px 40px;
+  font-size: 16px;
+  background-color: #E39FA9;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Adjust the margin as needed */
+  display: block; /* Make the button a block element */
+  margin-left: 470px;
+  border-radius: 50px;
+}
+
+.download-button1:hover {
+  background-color: #204A63; /* Darker blue on hover */
+}
+
+/* topic-of-interest styles */
+
+.flower-icon {
+  color: #ba8a80; /* Adjust the color as needed */
+  font-size: 24px; /* Adjust the size as needed */
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.topic-of-interest {
+  padding: 50px 0;
+  background-color: #f5e7e6;
+  margin-top: -50px;
+  height: 900px;
+}
+
+.topic-of-interest .hr1 {
+  margin-top: 5px; /* Adjust the margin-top to position the <hr> element */
+  height: 50px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #ba8a80, #f4cac1, #ba8a80); /* Define your gradient colors */
+  border: none; /* Remove default border */
+}
+
+.topic-of-interest .hr2 {
+  height: 50px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #ba8a80, #f4cac1, #ba8a80); /* Define your gradient colors */
+  border: none; /* Remove default border */
+  margin-top: 50px;
+}
+
+.topic-of-interest h2 {
+  margin-top: -20px;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #6a3e37;;
+  font-style:normal;
+}
+
+.topic-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topic-box {
+  flex: 0 1 calc(20% - 20px); /* Adjust width and spacing */
+  width: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+
+.topic-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.topic-text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* topic-of-interest styles */
+
+
+/* Contact-Landing styles */
+.contact {
+padding: 50px 0;
+background-color: #f5e7e6;
+font-family: 'Playfair Display', serif;
+}
+
+.contact h2 {
+text-align: center;
+margin-bottom: 30px;
+border: 2px solid;
+border-radius: 50px;
+padding: 10px;
+margin-left: 830px;
+margin-right: 780px;
+font-size: 0.8rem;
+font-weight: normal;
+background-color: #c98f8f;
+color: #ffffff;
+margin-top: -15px;
+}
+
+.contact-box {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.contact-box p {
+text-align: center;
+margin-bottom: 20px;
+font-size: 3rem;
+font-weight: bold;
+margin-top: -30px;
+margin-left: 50px;
+}
+
+.contact-box form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.form-group {
+flex: 0 0 45%; /* Adjusted width */
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #c98f8f18;
+font-family: 'Playfair Display', serif;
+}
+
+textarea {
+height: 200px;
+width: 600px;
+}
+
+.button1 {
+background-color: #c98f8f;
+padding: 20px 40px;
+color: white;
+border: #c98f8f;
+margin-left: 220px;
+border-radius: 25px;
+font-family: 'Playfair Display', serif;
+}
+
+.button1:hover {
+background-color: #ffffff;
+color: #c98f8f;
+}
+
+
+
+/* Contact-Landing styles */
+

@@ -1,0 +1,911 @@
+/* General container styling */
+.online-prescription-container {
+  width: 100%;
+  height: 920px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.background-image-prescription {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+
+.online-prescription-main-content {
+  display: flex;
+  width: 100%;
+  height: 1100px;
+  margin-top: -60px;
+  margin-left: -30px
+}
+
+.online-prescription-nav {
+  width: 280px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: auto;
+}
+
+.OP-nav{
+  margin-top: 100px;
+}
+
+.OP-nav-button {
+  display: inline-flex; /* Use inline-flex for inline display */
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 15px 30px; /* Adjust padding to maintain button size */
+  font-size: 16px;
+  margin-left: 40px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  color: #042440;
+  transition: background-color 0.3s, padding 0.3s; /* Add transition for smooth animation */
+}
+
+
+.OP-nav-button:hover {
+  background-color: #9a6cb4;
+  color: white;
+  padding: 15px 25px; /* Adjust padding to maintain button size */
+  margin-left: 50px;
+  border-radius: 25px;
+}
+
+.OP-nav-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #E39FA9;
+}
+
+.back-button-prescription{
+  position: absolute;
+  bottom: -50px;
+  top: 70px !important; /* Adjust as needed */
+  left: 30px !important; /* Adjust as needed */
+  color: #ffffff !important; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+}
+
+.back-button-prescription:hover{
+  color:#7c459c;
+}
+
+.back-button-prescription1{
+  position: absolute;
+  bottom: -50px;
+  top: 50px; /* Adjust as needed */
+  left: -200px; /* Adjust as needed */
+  color: #ffffff !important; /* Adjust the color of the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  text-decoration: none; /* Remove default underline */
+}
+
+.logo-image-prescription {
+  width: 200px !important; 
+  height: auto;
+  margin-left: 30px;
+  margin-top: -20px !important;
+}
+
+.online-prescription-content {
+  width: 100%;
+}
+
+.online-prescription-header-container {
+  position: relative; /* Ensure the container is positioned */
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  padding: 60px 120px;
+}
+
+
+.prescription-title1 {
+  color: #7c459c;
+  font-size: 25px;
+  margin-bottom: -10px;
+  margin-left: -1450px;
+}
+
+.prescription-title {
+  color: #7c459c;
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-left: -1100px;
+}
+
+.search-bar {
+  position: relative;
+  display: inline-block;
+  margin-left: -1300px !important;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 30px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s, width 0.3s;
+  background-color: #E39FA9;
+  padding-left: 40px;
+  
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.search-icon-prescription {
+  position: absolute;
+  top: 49%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.online-prescription-table-container {
+  width: 90%;
+  margin-left: 100px;
+}
+
+.online-prescription-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  border: 3px solid white;
+
+}
+
+.online-prescription-table th,
+.online-prescription-table td {
+  padding: 12px;
+  text-align: left;
+  
+  
+  
+}
+
+.online-prescription-table th {
+  background-color: #7c459c;
+  color: white;
+  font-weight: bold;
+  
+  
+}
+
+.online-prescription-table tr:hover {
+  background-color: #9a6cb4;
+}
+
+.online-prescription-table tr {
+  border-bottom: 3px solid  white;
+  
+}
+
+
+.online-prescription-table td {
+  color: #042440;
+}
+
+
+.online-prescription-edit-button,
+.online-prescription-delete-button {
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: -5px;
+}
+
+.online-prescription-edit-button {
+  background-color: #E39FA9;
+}
+
+.online-prescription-edit-button:hover {
+  background-color: #7c459c;
+}
+
+.online-prescription-delete-button {
+  background-color: #e74c3c;
+}
+
+.online-prescription-delete-button:hover {
+  background-color: #7c459c;
+}
+
+
+/* password */
+
+.password-title {
+  position: relative;
+  padding-left: 200px; /* Adjust as needed */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: -100px;
+}
+
+.lock-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.lock-icon svg {
+  width: 40px; /* Adjust the width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  color: #ffffff;
+}
+
+.lock-icon p {
+  margin-top: 5px; /* Adjust spacing as needed */
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Adjust the position of the line */
+.password-title::before {
+  content: "";
+  position: absolute;
+  left: 280px;
+  top: 50px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 250px;
+  background-color: #ffffff;
+}
+
+
+.online-prescription-password-container {
+  margin: 250px auto;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  width: 30%;
+  height: 20vh;
+  margin-top: 300px;
+  z-index: 1; 
+  margin-left: 720px;
+}
+
+.online-prescription-password-container h3 {
+  margin-top: -100px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: -70px;
+}
+
+.online-prescription-password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.online-prescription-password-form input {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 250px;
+}
+
+.online-prescription-button {
+  padding: 10px 20px;
+  background-color: #E39FA9;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.online-prescription-button:hover {
+  background-color: #7c459c;
+}
+
+.online-prescription-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.prescription-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.prescription-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 600px;
+}
+
+
+.prescription-modal-body {
+  margin-top: 20px;
+}
+
+.prescription-image{
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.prescription-close-button {
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #042440;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  margin-left: 420px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.prescription-close-button:hover {
+  background-color: transparent;
+  color: #7c459c;
+}
+
+
+/* Pill Organizer content */
+.pill-organizer-content {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.schedule-label {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #7c459c;
+}
+
+.PO-add-button {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #042440;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.PO-add-button:hover {
+  color: #7c459c;
+  background: none;
+}
+
+.PO-schedule-form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(67, 25, 92, 0.8);
+  z-index: 1000;
+}
+
+.PO-close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #042440;
+  font-size: 25px;
+  margin-left: 400px;
+  margin-top: -50px;
+}
+
+.PO-close-button:hover {
+  color: #7c459c;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+
+.PO-schedule-form-popup h2 {
+  font-size: 24px;
+  color: #042440;
+  margin-bottom: 30px; /* Adjust spacing between title and form */
+  font-style: italic;
+  margin-top: -40px;
+}
+.PO-form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.PO-form-input {
+  padding: 10px;
+  border: none !important;
+  border-bottom: 2px solid #ddd !important;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: transparent !important;
+  color: #042440;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.PO-form-label {
+  position: absolute;
+  top: 20px; /* Initial position to start above the input */
+  left: 20px;
+  color: #042440;
+  font-size: 16px; /* Start with a smaller font size */
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  pointer-events: none;
+}
+
+.PO-form-label.filled {
+  top: -20px; /* Move label up when input is focused or has content */
+  font-size: 12px; /* Shrink font size when label moves up */
+  color: #042440; /* Change label color when active */
+}
+
+.PO-form-input:focus ~ .PO-form-label,
+.PO-form-input:not(:placeholder-shown) ~ .PO-form-label {
+  top: -20px; /* Move label up when input is focused or has content */
+  font-size: 12px; /* Shrink font size when label moves up */
+  color: #042440; /* Change label color when active */
+}
+
+.PO-form-submit {
+  background-color: #7c459c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 290px;
+  margin-top: 10px;
+}
+
+.PO-form-submit:hover {
+  background-color: #E39FA9;
+}
+
+
+.medicine-tracker {
+  flex: 1;
+  margin-left: 750px;
+  margin-top: -570px;
+  background-color: #ffffff;
+  height: 550px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.medicine-reminder-header {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+
+}
+
+/* Style for the list */
+.medicine-reminder-list {
+  display: flex;
+    flex-direction: column;
+    width: 94%;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px 0;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/* Style for list items */
+.medicine-reminder-item {
+  display: flex;
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.medicine-info-container {
+  margin-left: 10px;
+  margin-top: -40px;
+  background-color: #E39FA9;
+  height: 200px;
+  width: 1440px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Heading for the medicines list */
+.medicine-info-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #042440;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+/* List of medicines */
+.medicine-info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.medicine-info-container li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-title1 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #042440;
+  flex: 1;
+}
+
+.medicine-info-container li div {
+  margin-right: 10px;
+}
+
+.medicine-info-container button {
+  background-color: #7c459c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.medicine-info-container button:hover {
+  background-color: #E39FA9;
+}
+/* Alarm form container */
+.alarm-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Heading for the alarm form */
+.alarm-form h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #042440;
+}
+
+.reminder-times-container,
+.alarm-settings-container {
+  margin-bottom: 1rem;
+}
+
+/* Alarm form container */
+.alarm-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 450px;
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+/* Heading for the alarm form */
+.alarm-form h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #042440;
+}
+
+.reminder-times-container,
+.alarm-settings-container {
+  margin-bottom: 1rem;
+}
+
+.form-group-container{
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  height: 50px;
+}
+
+.form-group-container1{
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  height: 250px;
+}
+
+/* Form group styling */
+.alarm-form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.alarm-form .form-group h4 {
+  margin: 0;
+  margin-left: 10px;
+  flex: 0 0 150px; /* Adjust width as needed */
+}
+
+.alarm-form .form-group label {
+  flex: 0 0 150px; /* Adjust width as needed */
+  margin-right: 1rem;
+}
+
+.time-select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  margin-left: 12rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-right: 20px;
+}
+
+.alarm-form .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.alarm-form .form-group input[type="time"] {
+  padding: 6px;
+}
+
+.alarm-form-submit-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  width: 500px;
+  font-size: 16px;
+  background-color: #7c459c;
+}
+
+.alarm-form-submit-button:hover{
+  background-color: #E39FA9;
+
+
+}
+
+
+.medicine-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.medicine-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.medicine-time {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.medicine-arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Adjust size as needed */
+  color: #000; /* Adjust color as needed */
+  padding: 0;
+  margin: 0;
+  margin-left: 450px;
+}
+
+.medicine-arrow-button:hover {
+  background-color: #7c459c;
+  color: #ffffff; /* Change color on hover */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.medicine-icon {
+  font-size: 40px; /* Adjust the size of the icon as needed */
+  color: #9a6cb4; /* Adjust the color of the icon */
+  margin-right: 10px; 
+}
+
+/* calendar */
+
+.prescription-calendar-container{
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 550px;
+  width: 700px;
+  border-radius: 10px;
+  margin-left: 10px !important;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Custom styles for the calendar header */
+.rbc-header {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Custom styles for the event */
+.rbc-event {
+  background-color: transparent !important; 
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Custom styles for the calendar view */
+.rbc-month-view {
+  border: 1px solid #ddd;
+}
+
+/* Custom styles for the calendar day */
+.rbc-day-slot {
+  background-color: #fafafa;
+}
+
+.rbc-date-cell.rbc-now {
+  color: #ffffff;
+
+}
+
+/* Toggle switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px; 
+  height: 34px;
+  margin-left: 250px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 20px;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+  width: 70px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7c459c; /* Green when enabled */
+  width: 70px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded slider */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+

@@ -1,0 +1,327 @@
+.consultant-prescription-container {
+    width: 100%;
+    height: 920px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    }
+    
+    .background-image-prescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure it's behind other content */
+    }
+    
+    .consultant-prescription-main-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    margin-left: -30px
+    }
+    
+    .consultant-prescription-nav {
+    width: 100px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    }
+    
+    .back-button-prescription{
+    position: absolute;
+    bottom: -50px;
+    top: 50px; 
+    left: -200px; 
+    color: #fff; 
+    font-size: 40px; 
+    text-decoration: none; 
+    }
+    
+    .back-button-prescription1{
+    position: absolute;
+    bottom: -50px;
+    top: 50px; 
+    left: -200px; 
+    color: #E39FA9; 
+    font-size: 40px; 
+    text-decoration: none; 
+    }
+    
+    .logo-image-prescription {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    margin-left: 40px;
+    }
+    
+    .consultant-prescription-content {
+    width: 100%;
+    }
+    
+    .consultant-prescription-header-container {
+    position: relative; 
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover; 
+    background-position: center; 
+    padding: 60px 120px;
+    }
+    
+    .medical-title-prescription{
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: -10px;
+    margin-left: -1550px;
+    }
+    
+    .prescription-title-medical {
+    color: #603830;
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-left: -1200px;
+    }
+    
+
+    
+    /* password */
+    
+    .password-title {
+    position: relative;
+    padding-left: 200px; /* Adjust as needed */
+    }
+    
+    .left-section {
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    }
+    
+    .lock-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing as needed */
+    }
+    
+    .lock-icon svg {
+    width: 40px; /* Adjust the width of the icon /
+    height: auto; / Maintain aspect ratio */
+    color: #ffffff;
+    }
+
+    .lock-icon p {
+        margin-top: 5px; /* Adjust spacing as needed */
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: italic;
+        }
+        
+        /* Adjust the position of the line */
+        .password-title::before {
+        content: "";
+        position: absolute;
+        left: 280px;
+        top: 50px;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 250px;
+        background-color: #ffffff;
+        }
+        
+        .consultant-prescription-password-container {
+        margin: 250px auto;
+        padding: 20px;
+        border-radius: 50px;
+        text-align: center;
+        width: 30%;
+        height: 20vh;
+        margin-top: 300px;
+        z-index: 1;
+        margin-left: 720px;
+        }
+        
+        .consultant-prescription-password-container h3 {
+        margin-top: -100px;
+        margin-bottom: 0px;
+        color: white;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: -70px;
+        }
+        
+        .consultant-prescription-password-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 280px;
+        }
+        
+        .consultant-prescription-password-form input {
+        padding: 15px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        width: 250px;
+        }
+        
+        .consultant-prescription-button-1 {
+        padding: 10px 20px;
+        background-color: #c98f8f;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100px;
+        margin-top: 20px;
+        font-size: 16px;
+        }
+        
+        .consultant-prescription-button
+        {
+        background-color: #603830;
+        }
+        
+        .consultant-prescription-error {
+        color: red;
+        margin-top: 10px;
+        }
+        
+        .consultant-prescription-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        }
+        
+        .consultant-prescription-modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+        height: 500px;
+        }
+        
+        .consultant-prescription-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .consultant-prescription-modal-header h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        }
+        
+        .consultant-prescription-modal-close {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        }
+        
+        .consultant-prescription-modal-body {
+        margin-top: 50px;
+        }
+        
+        .consultant-prescription-modal-body p {
+        margin: 20px 0;
+        }
+        
+        .consultant-prescription-close-button {
+        padding: 10px 50px;
+        background-color: #E39FA9;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: background-color 0.3s;
+        margin-left: 170px;
+        font-size: 15px;
+        }
+        
+        .consultant-prescription-close-button
+        {
+        background-color: #603830;
+        }
+
+        
+.consultant-prescription-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    height: 60vh; /* Set height to full viewport height */
+  }
+  
+  .consultant-prescription-form {
+    width: 50%;
+  }
+  
+  .consultant-prescription-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .consultant-prescription-form input:focus {
+    outline: none;
+    border-color: #E39FA9; /* Change the border color on focus */
+  }
+  
+  .consultant-prescription-button {
+    padding: 15px 20px; /* Adjust padding as needed */
+    background-color: #603830;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+    margin-left: 400px;
+  }
+  
+  .consultant-prescription-form input[type="time"] {
+    width: 100%;
+    padding: 15px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #603830; /* Match the color of other input fields */
+  }
+  
+  .consultant-prescription-form input[type="time"]:focus {
+    outline: none;
+    border-color: #E39FA9; /* Change the border color on focus */
+  }
+  
